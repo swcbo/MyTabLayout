@@ -1,5 +1,5 @@
 # 自定义TabLayout
-##功能
+## 功能
 
 自定义tab线的长度以及移动速度,和屏蔽指定tab点击移动事件(tablayout基本功能)
 
@@ -30,7 +30,7 @@ textview显示数组 ：array
 ## 后续
 
 如果有什么特殊需求以及特殊想法可以留言
-博客地址:简书(http://www.jianshu.com/p/54c68ae64f77)
+博客地址:[简书](http://www.jianshu.com/p/54c68ae64f77)
 ## 依赖
 
 >项目下的
