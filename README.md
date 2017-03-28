@@ -16,5 +16,21 @@ textview显示数组 ：array
 - 后续
 如果有什么特殊需求以及特殊想法可以留言
 博客地址:简书(http://www.jianshu.com/p/54c68ae64f77)
+- 依赖
+>项目下的
 
+```
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+        jcenter()
+    }
+}
+```
+
+>Moudle 下的
+
+```
+ compile 'com.github.q1104133609:MyTabLayout:v0.0.1'
+```
 
