@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <tablayout.huangbo.com.tablayout.MyIndicator
         android:id="@+id/my"
@@ -17,40 +15,78 @@
         app:text_nomal_color="@color/text_hint"
         app:text_nomal_size="12"
         app:text_press_color="@color/text_title"
-        app:text_press_size="13"
-        >
+        app:text_press_size="13">
 
     </tablayout.huangbo.com.tablayout.MyIndicator>
 
-    <Button
-        android:id="@+id/btn_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="添加" />
+    <tablayout.huangbo.com.tablayout.HbElasticView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/hb"
+        android:fillViewport="true"
+        android:layout_below="@id/my">
 
-    <Button
-        android:id="@+id/btn_speed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_add"
-        android:layout_centerInParent="true"
-        android:text="速度" />
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/srolview"-->
+            <!--android:fillViewport="true">-->
 
-    <Button
-        android:id="@+id/btn_jinzhi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/btn_speed"
-        android:text="禁止" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="#000000"
+                android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_length"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/btn_jinzhi"
-        android:text="修改为tab铺满" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:background="#ff50"
+                   >
 
+                </View>
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="添加" />
+
+                <Button
+                    android:id="@+id/btn_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_add"
+                    android:layout_centerInParent="true"
+                    android:text="速度" />
+
+                <Button
+                    android:id="@+id/btn_jinzhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_speed"
+                    android:layout_centerInParent="true"
+                    android:text="禁止" />
+
+                <Button
+                    android:id="@+id/btn_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_jinzhi"
+                    android:layout_centerInParent="true"
+                    android:text="修改为tab铺满" />
+
+                <Button
+                    android:id="@+id/btn_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_jinzhi"
+                    android:layout_centerInParent="true"
+                    android:text="修改为tab颜色" />
+
+
+            </LinearLayout>
+        <!--</ScrollView>-->
+    </tablayout.huangbo.com.tablayout.HbElasticView>
 </RelativeLayout>

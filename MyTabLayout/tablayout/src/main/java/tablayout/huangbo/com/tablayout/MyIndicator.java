@@ -211,7 +211,7 @@ public class MyIndicator extends RelativeLayout {
      */
     private void resetColor() {
         for (int i = 0; i < mTextList.size(); i++) {
-            mTextList.get(i).setTextColor(getContext().getResources().getColor(R.color.text_hint));
+            mTextList.get(i).setTextColor(mText_Nomal);
         }
     }
 
@@ -228,8 +228,9 @@ public class MyIndicator extends RelativeLayout {
                     if (finalI != mSelected && mProhibitPisition != finalI) {
                         setChanger(finalI);
                     }
-                    if (mOnIndiacatorClickListener != null)
+                    if (mOnIndiacatorClickListener != null) {
                         mOnIndiacatorClickListener.onClick(finalI, v);
+                    }
                 }
             });
         }
@@ -272,6 +273,18 @@ public class MyIndicator extends RelativeLayout {
 
 
     /**
+     * 重新颜色赋值
+     */
+    public void resetNomalColor(int pressColor,int nomalColor,int lineColor){
+        removeAllViews();
+        mTextList.clear();
+        mText_Press = pressColor;
+        mText_Nomal = nomalColor;
+        mColor = lineColor;
+        initView();
+    }
+
+    /**
      * 添加页面
      *
      * @param charSequence
@@ -279,10 +292,11 @@ public class MyIndicator extends RelativeLayout {
     public void add(CharSequence charSequence, int position) {
         removeAllViews();
         mTextList.clear();
-        if (mListTitle.size() == position)
+        if (mListTitle.size() == position) {
             mListTitle.set(position - 1, charSequence.toString());
-        else
+        } else {
             mListTitle.add(charSequence.toString());
+        }
         initView();
     }
 

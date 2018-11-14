@@ -1,7 +1,7 @@
 # 自定义TabLayout
 ## 功能
 
-自定义tab线的长度以及移动速度,和屏蔽指定tab点击移动事件(tablayout基本功能)
+自定义tab线的长度以及移动速度,和屏蔽指定tab点击移动事件(tablayout基本功能)动态修改颜色
 
 ## Xml属性定义
 
@@ -47,6 +47,6 @@ allprojects {
 >Moudle 下的
 
 ```
- compile 'com.github.q1104133609:MyTabLayout:v0.0.1'
+ compile 'com.github.q1104133609:MyTabLayout:v0.0.2'
 ```
 
