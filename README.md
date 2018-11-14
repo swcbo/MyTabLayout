@@ -47,6 +47,6 @@ allprojects {
 >Moudle 下的
 
 ```
- compile 'com.github.q1104133609:MyTabLayout:v0.0.2'
+ compile 'com.github.q1104133609:MyTabLayout:v0.0.3'
 ```
 

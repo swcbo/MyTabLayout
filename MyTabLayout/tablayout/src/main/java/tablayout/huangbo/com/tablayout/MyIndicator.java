@@ -151,6 +151,7 @@ public class MyIndicator extends RelativeLayout {
      */
     private void initView() {
         measure(0, 0);
+        mTextList.clear();
         //获取每个textview布局所占的宽度
         mContWidth = getWidth() / mListTitle.size();
         //添加线
@@ -277,7 +278,6 @@ public class MyIndicator extends RelativeLayout {
      */
     public void resetNomalColor(int pressColor,int nomalColor,int lineColor){
         removeAllViews();
-        mTextList.clear();
         mText_Press = pressColor;
         mText_Nomal = nomalColor;
         mColor = lineColor;
@@ -291,7 +291,6 @@ public class MyIndicator extends RelativeLayout {
      */
     public void add(CharSequence charSequence, int position) {
         removeAllViews();
-        mTextList.clear();
         if (mListTitle.size() == position) {
             mListTitle.set(position - 1, charSequence.toString());
         } else {
